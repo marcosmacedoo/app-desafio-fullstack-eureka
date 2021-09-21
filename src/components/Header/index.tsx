@@ -31,8 +31,6 @@ function Header() {
       try {
         const responseApi = await api.get(`cep/${cep}`)
 
-        setLoadingDataCep(false)
-
         dataCepApi = responseApi.data
 
         // Caso a API não encontre o CEP buscado, ira retornar um objeto { erro: true }
@@ -44,6 +42,8 @@ function Header() {
       } catch {
         alert('Erro ao realizar consulta de CEP')
         console.error('Erro ao consultar a API')
+      } finally {
+        setLoadingDataCep(false)
       }
     }
   }
