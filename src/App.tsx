@@ -16,6 +16,7 @@ function App() {
               <th>UF</th>
               <th>Cidade</th>
               <th>Bairro</th>
+              <th>Logradouro</th>
               <th>Complemento</th>
               <th>DDD</th>
               <th>IBGE</th>
@@ -28,6 +29,7 @@ function App() {
               <td>{dataCep?.uf}</td>
               <td>{dataCep?.localidade}</td>
               <td>{dataCep?.bairro}</td>
+              <td>{dataCep?.logradouro}</td>
               <td>{dataCep?.complemento}</td>
               <td>{dataCep?.ddd}</td>
               <td>{dataCep?.ibge}</td>
